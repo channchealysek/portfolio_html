@@ -1,0 +1,53 @@
+/* Basic styling */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+nav {
+    display: flex;
+    background-color: darkcyan;
+    justify-content:flex-end;
+    border-bottom: 3px solid darkgrey;
+  }
+  
+ nav a {
+    margin-top: 10px;
+    height: 72px;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    text-decoration: underline 3px cornsilk;
+    font-size: 23px;
+  }
+
+ .logo {
+      width: 350px;
+      height: 60px;
+      top: 10px;
+      background-color: darkgoldenrod;
+      color: white;
+      padding: 15px;
+      text-align: right;
+      position: relative;
+      right:calc(160px + 100vw - 1024px);
+  }
+
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+
+    .logo {
+        width: 100%;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+  }
