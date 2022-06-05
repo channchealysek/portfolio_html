@@ -98,7 +98,18 @@ ul li a:hover::after {
   transform-origin: left;
 }
 
-/*  */
+.logo{
+  background-color: lightblue;
+  margin: 0;
+  padding: 10px;
+  width: 430px;
+  position: relative;
+  text-align: right;
+  float: left;
+  top: 1px;
+  right: 45px
+  
+}
 
 /* HEADER / NAVBAR STYLES END */
 
@@ -394,71 +405,71 @@ ul li a:hover::after {
   }
 /* END FOOTER STYLES */
 
-  @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    main,
-    nav {
-      flex-direction: column;
-    }
-    .logo {
-        width: 100%;
-        left: 0;
-        right: 0;
-        text-align: center;
-    }
-      .project-1 {
-      grid-column-start: 1;
-      grid-column-end: 6;
-      grid-row-start: 1;
-      grid-row-end: 1;
-    }
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  main,
+  nav {
+    flex-direction: column;
+  }
+  .logo {
+      width: 100%;
+      left: 0;
+      right: 0;
+      text-align: center;
+  }
+    .project-1 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  
+  .project-2 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  
+  .project-3 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+  
+  .project-4 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 4;
+  }
+ 
+  .project-5 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 5;
+  }
+  
+  .project-6 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 6;
+  }
+  
+  .project-7 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 7;
+  }
+  
+  .footer {
     
-    .project-2 {
-      grid-column-start: 1;
-      grid-column-end: 6;
-      grid-row-start: 2;
-      grid-row-end: 2;
-    }
-    
-    .project-3 {
-      grid-column-start: 1;
-      grid-column-end: 6;
-      grid-row-start: 3;
-      grid-row-end: 3;
-    }
-    
-    .project-4 {
-      grid-column-start: 1;
-      grid-column-end: 6;
-      grid-row-start: 4;
-      grid-row-end: 4;
-    }
-   
-    .project-5 {
-      grid-column-start: 1;
-      grid-column-end: 6;
-      grid-row-start: 5;
-      grid-row-end: 5;
-    }
-    
-    .project-6 {
-      grid-column-start: 1;
-      grid-column-end: 6;
-      grid-row-start: 6;
-      grid-row-end: 6;
-    }
-    
-    .project-7 {
-      grid-column-start: 1;
-      grid-column-end: 6;
-      grid-row-start: 7;
-      grid-row-end: 7;
-    }
-    
-    .footer {
-      
-    }
-   
-    
-  }  
+  }
+ 
+  
+}  
     
