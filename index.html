@@ -8,16 +8,41 @@
     <title>My Porfolio</title>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav>
-      <h1 class="logo">SEK, Channchealy</h1>
-      <a href="#">About Me</a>
-      <a href="#">Work</a>
-      <a href="#">Contact Me</a>
-      <a href="#">Resume</a>
-    </nav>
+    <!-- navigation tags - block level element -->
+    <header>
+      <h1>
+        <a href="/">SEK, Channchealy</a>
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about-me">About Me</a>
+          </li>
+          <li>
+            <a href="#work">Work</a>
+          </li>
+          <li>
+            <a href="#contact-me">Contact Me</a>
+          </li>
+          <li>
+            <a href="#resume">Resume</a>
+          </li>
+          
+        </ul>
+      </nav>
+    </header>
+    <!-- end navigation -->
+    <!-- section header with background image -->
+    <div class="section-header text-left">
+      <div class="sub-title">
+        <p>
+          Porfolio with HTML/CSS
+        </p>
+      </div>
+    </div>
+
     <!--section -->
-    <div class="section-header">
+    <div class="section">
       <section>
         <div class="wrapper">
           <div class="title-container">
@@ -43,10 +68,11 @@
           <div class="projects-container">
             <div class="container">
               <div class="grid surf-report">
-                <div class="image-container"></div>
-                  <!-- <div class="image-container">
-                    <img src="./assets/images/image-bg0.png" alt="" width="1542px" height="380px">
-                  </div> -->
+                <div class="image-container">
+                  <a href="#">
+                    <img src="./assets/images/image-bg0.png" alt="Surf Report with MERN Stact">
+                  </a>
+                </div>
                   <div class="title">
                     <p>
                       <h1>Surf Report</h1>
@@ -56,7 +82,11 @@
               </div>
               
               <div class="grid led-wall">
-                <div class="image-container"></div>
+                <div class="image-container">
+                  <a href="#">
+                    <img src="./assets/images/image-bg0.png" alt="LED Wall with Node/IoT">
+                  </a>
+                </div>
                 <div class="title">
                   <p>
                     <h1>LED Wall</h1>
@@ -66,7 +96,11 @@
               </div>
 
               <div class="pastel-puzzels">
-                <div class="image-container"></div>
+                <div class="image-container">
+                  <a href="#">
+                    <img src="./assets/images/image-bg0.png" alt="Pastel Puzzels with MERN Stack">
+                  </a>
+                </div>
                 <div class="title">
                   <p>
                     <h1>Pastel Puzzels</h1>
@@ -75,7 +109,11 @@
                 </div>
               </div>
               <div class="grid calculator">   
-                <div class="image-container"></div>      
+                <div class="image-container">
+                  <a href="#">
+                    <img src="./assets/images/image-bg0.png" alt="Calculator with React/JavaScript/CSS">
+                  </a>
+                </div>      
                 <div class="title">
                   <p>
                     <h1>Calculator</h1>
@@ -83,8 +121,13 @@
                   </p>
                 </div>
               </div>
+
               <div class="grid run-buddy">
-                <div class="image-container"></div>  
+                <div class="image-container">
+                  <a href="#">
+                    <img src="./assets/images/image-bg0.png" alt="HTML/CSS">
+                  </a>
+                </div>  
                 <div class="title">
                   <p>
                     <h1>Run Buddy</h1>
@@ -93,8 +136,34 @@
                 </div>
               </div>
 
-              <div class="grid project-6">Projects-A</div>
-              <div class="grid project-7">Projects-B</div>
+              <div class="grid project-6">
+                <div class="image-container">
+                  <a href="#">
+                    <img src="./assets/images/image-bg0.png" alt="HTML/CSS">
+                  </a>
+                </div>  
+                <div class="title">
+                  <p>
+                    <h1>Project-A</h1>
+                    <h2>HTML/CSS</h2>
+                  </p>
+                </div>
+              </div>
+
+              <div class="grid project-7">
+                <div class="image-container">
+                  <a href="#">
+                    <img src="./assets/images/image-bg0.png" alt="HTML/CSS">
+                  </a>
+                </div>  
+                <div class="title">
+                  <p>
+                    <h1>Projects-B</h1>
+                    <h2>HTML/CSS</h2>
+                  </p>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
