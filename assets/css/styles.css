@@ -20,6 +20,7 @@ p {
 /* HEADER / NAV BAR STYLES START */
 
 header {
+  display: flex;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -192,7 +193,6 @@ ul li a:hover::after {
   .image-container {
     position:absolute;
     background-size: cover;
-    background-position: center;
     margin-left: 2px;
     margin-top: 2px;
     margin-right: 2px;
@@ -318,6 +318,7 @@ ul li a:hover::after {
   .project-7 {
     grid-column: 3 / 4;
     grid-row: 5 / 6;
+    min-height: 250px;
     background-color: #f3cddd;
   }
 
@@ -405,51 +406,85 @@ ul li a:hover::after {
   }
 /* END FOOTER STYLES */
 
+/* For mobile phones: */
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  main,
-  nav {
-    flex-direction: column;
+  
+  header {
+    display: block;
+    position:unset;
+    /* padding: 20px 14px 20px 64px; */
+  }
+  header nav ul {
+    display: block;
+    text-align: center;
   }
   .logo {
-      width: 100%;
-      left: 0;
-      right: 0;
-      text-align: center;
+    display: block;
+    width: 100%;
+    right: 0;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
   }
-    .project-1 {
+  .surf-report {
     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 1;
   }
+
+  .surf-report .image-container img {
+    width: 546px;
+    height: 416px;
+  }
   
-  .project-2 {
+  .led-wall{
     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 2;
   }
+
+  .led-wall .image-container img {
+    width: 546px;
+    height: 316px;
+  }
+
   
-  .project-3 {
+  .pastel-puzzels {
     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 3;
     grid-row-end: 3;
   }
   
-  .project-4 {
+  .pastel-puzzels .image-container img {
+    width: 546px;
+    height: 416px;
+  }
+
+  .calculator {
     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 4;
     grid-row-end: 4;
   }
+
+  .calculator .image-container img {
+    width: 546px;
+    height: 315px;
+  }
  
-  .project-5 {
+  .run-buddy {
     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 5;
     grid-row-end: 5;
+  }
+
+  .run-buddy .image-container img {
+    width: 546px;
+    height: 315px;
   }
   
   .project-6 {
@@ -457,6 +492,11 @@ ul li a:hover::after {
     grid-column-end: 6;
     grid-row-start: 6;
     grid-row-end: 6;
+  }
+
+  .project-6 .image-container img {
+    width: 546px;
+    height: 246px;
   }
   
   .project-7 {
@@ -466,8 +506,14 @@ ul li a:hover::after {
     grid-row-end: 7;
   }
   
+  .project-7 .image-container img {
+    width: 546px;
+    height: 246px;
+  }
+
   .footer {
-    
+    display:block;
+    text-align: center;
   }
  
   
