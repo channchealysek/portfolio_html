@@ -10,7 +10,6 @@ body {
 }
 h1 {
   font-size: 36px;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
 p {
@@ -146,6 +145,7 @@ ul li a:hover::after {
     background-color: white;
     padding: 10px;
     overflow: auto;
+
   }
 
   .title-container {
@@ -166,6 +166,10 @@ ul li a:hover::after {
     width: 77%;
     padding: 10px;
     border-left: thick solid darkgoldenrod;
+    /* create border shadow bottom */
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
   }
 
   .container {
@@ -191,6 +195,7 @@ ul li a:hover::after {
   }
 
   .image-container {
+    display: flex;
     position:absolute;
     background-size: cover;
     margin-left: 2px;
@@ -230,7 +235,7 @@ ul li a:hover::after {
      top: calc(75% - 0.59em);
   }
 
-  .surf-report .image-container img {
+  .surf-report .image-container img{
     object-fit: cover;
     width: 1420px;
     height: 416px;
@@ -390,7 +395,6 @@ ul li a:hover::after {
   header {
     display: block;
     position:unset;
-    /* padding: 20px 14px 20px 64px; */
   }
   header nav ul {
     display: block;
