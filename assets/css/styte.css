@@ -75,7 +75,7 @@ header {
     display: grid;
     height: 98vh;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 5.3fr 3.3fr 2.3fr 1.2fr 1.2fr 1.2fr 2.2fr 2.2fr;
+    grid-template-rows: 5.3fr 3.3fr 2.3fr 1.2fr 1.2fr 1.2fr 3.2fr 3.2fr;
     grid-template-areas:
     "sidebar work work work work work work work work work"
     "sidebar content1 content1 content1 content3 content3 content3 content3 content3 content3"
