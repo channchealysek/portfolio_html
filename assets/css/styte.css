@@ -1,0 +1,199 @@
+
+:root {
+    --main-radius:5px;
+    --main-padding:5px;
+}
+body {
+    width: 90%;
+    margin: auto;
+    text-align:center;
+}
+
+.nav-container {
+    display: grid;
+    height: 10vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "nav nav nav nav nav nav nav nav nav nav";
+    gap: 0.2rem;
+    text-align: center;
+    margin-top: 0.2rem;
+}
+
+.header-container {
+    display: grid;
+    height: 27vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header header header header header header header header";
+    gap: 0.2rem;
+    text-align: center;
+    margin-top: 0.2rem;
+}
+
+.aboutme-container {
+    display: grid;
+    height: 45vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "sidebar main main main main main main main main main";
+    gap: 0.2rem;
+    text-align: right;
+    margin-top: 0.2rem;
+}
+
+.work-container {
+    display: grid;
+    height: 98vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 6.5fr 5.5fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr;
+    grid-template-areas:
+    "sidebar main main main main main main main main main"
+    "sidebar content1 content1 content1 content3 content3 content3 content3 content3 content3"
+    "sidebar content1 content1 content1 content3 content3 content3 content3 content3 content3"
+    "sidebar content1 content1 content1 content3 content3 content3 content3 content3 content3"
+    "sidebar content2 content2 content2 content3 content3 content3 content3 content3 content3"
+    "sidebar content2 content2 content2 content3 content3 content3 content3 content3 content3"
+    "sidebar content4 content4 content4 content3 content3 content3 content3 content3 content3"
+    "sidebar content5 content5 content5 content5 content5 content5 content6 content6 content6";
+    gap: 0.2rem;
+    text-align: right;
+    margin-top: 0.2rem;
+}
+
+.contactme-container {
+    display: grid;
+    height: 15vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "sidebar main main main main main main main main main";
+    gap: 0.2rem;
+    text-align: right;
+    margin-top: 0.2rem;
+}
+
+.footer-container {
+    display: grid;
+    height: 10vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr;
+    grid-template-areas:
+    "footer footer footer footer footer footer footer footer footer footer";
+    gap: 0.2rem;
+    text-align: center;
+    margin-top: 0.2rem;
+}
+
+nav {
+    background: blanchedalmond;
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+main {
+    grid-area: main;
+    background: url("https://pure.wallpapergk.com/download/smiley_curly_hair_blue_eyes_cute_girl_in_blur_background_wearing_yellow_dress_cute.jpg") yellow;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+header {
+    grid-area: header;
+    background: url("https://pure.wallpapergk.com/download/smiley_curly_hair_blue_eyes_cute_girl_in_blur_background_wearing_yellow_dress_cute.jpg") yellow;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.title-aboutme-container {
+    background: pink;
+    border-right: 3px solid coral;
+    grid-area: sidebar;
+    /* border-radius: var(--main-radius);
+    padding-top: var(--main-padding); */
+}
+
+.title-work-container {
+    background: pink;
+    grid-area: sidebar;
+    border-right: 3px solid coral;
+    grid-area: sidebar;
+    /* border-radius: var(--main-radius);
+    padding-top: var(--main-padding); */
+}
+
+.content1 {
+    background: yellow;
+    grid-area: content1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.content2 {
+    background: yellow;
+    grid-area: content2;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.content3 {
+    background: yellow;
+    grid-area: content3;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.content4 {
+    background: yellow;
+    grid-area: content4;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.content5 {
+    background: yellow;
+    grid-area: content5;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.content6 {
+    background: yellow;
+    grid-area: content6;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+footer {
+    background: yellowgreen;
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+@media only screen and (max-width:550px){
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas:
+        "nav"
+        "sidebar"
+        "main"
+        "content1"
+        "content2"
+        "content3"
+        "content4"
+        "content5"
+        "content6"
+        "footer";
+    }
+
+}
