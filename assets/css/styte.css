@@ -18,7 +18,19 @@ body {
     "nav nav nav nav nav nav nav nav nav nav";
     gap: 0.2rem;
     text-align: center;
-    margin-top: 0.2rem;
+    margin-top: 0.4rem;
+}
+
+nav {
+    background: blanchedalmond;
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+
+    /* create border shadow bottom */
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
 }
 
 .header-container {
@@ -30,7 +42,21 @@ body {
     "header header header header header header header header header header";
     gap: 0.2rem;
     text-align: center;
-    margin-top: 0.2rem;
+    margin-top: 0.4rem;
+}
+
+header {
+    grid-area: header;
+    background: url("https://pure.wallpapergk.com/download/smiley_curly_hair_blue_eyes_cute_girl_in_blur_background_wearing_yellow_dress_cute.jpg") yellow;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+
+    /* create border shadow bottom */
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
 }
 
 .aboutme-container {
@@ -39,19 +65,19 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    "sidebar main main main main main main main main main";
+    "sidebar aboutme aboutme aboutme aboutme aboutme aboutme aboutme aboutme aboutme";
     gap: 0.2rem;
     text-align: right;
-    margin-top: 0.2rem;
+    margin-top: 0.4rem;
 }
 
 .work-container {
     display: grid;
     height: 98vh;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 6.5fr 5.5fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr;
+    grid-template-rows: 5.3fr 3.3fr 2.3fr 1.2fr 1.2fr 1.2fr 2.2fr 2.2fr;
     grid-template-areas:
-    "sidebar main main main main main main main main main"
+    "sidebar work work work work work work work work work"
     "sidebar content1 content1 content1 content3 content3 content3 content3 content3 content3"
     "sidebar content1 content1 content1 content3 content3 content3 content3 content3 content3"
     "sidebar content1 content1 content1 content3 content3 content3 content3 content3 content3"
@@ -61,7 +87,7 @@ body {
     "sidebar content5 content5 content5 content5 content5 content5 content6 content6 content6";
     gap: 0.2rem;
     text-align: right;
-    margin-top: 0.2rem;
+    margin-top: 0.4rem;
 }
 
 .contactme-container {
@@ -70,10 +96,10 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    "sidebar main main main main main main main main main";
+    "sidebar contactme contactme contactme contactme contactme contactme contactme contactme contactme";
     gap: 0.2rem;
     text-align: right;
-    margin-top: 0.2rem;
+    margin-top: 0.4rem;
 }
 
 .footer-container {
@@ -85,44 +111,57 @@ body {
     "footer footer footer footer footer footer footer footer footer footer";
     gap: 0.2rem;
     text-align: center;
-    margin-top: 0.2rem;
+    margin-top: 0.4rem;
 }
 
-nav {
-    background: blanchedalmond;
-    grid-area: nav;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-}
+.title-container {
+    position: relative;
+    float: right;
+    text-align:end;
+    padding: 10px;
+    width: 100%;
+    background-color: aliceblue;
 
-main {
-    grid-area: main;
-    background: url("https://pure.wallpapergk.com/download/smiley_curly_hair_blue_eyes_cute_girl_in_blur_background_wearing_yellow_dress_cute.jpg") yellow;
+    /* create border shadow bottom */
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+  }
+
+  .article-container {
+    position: relative;
+    text-align:justify;
+    padding: 10px;
+    width: 100%;
+    line-height: 1.3rem;
+  }
+
+  .img-container {
+    position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-}
-
-header {
-    grid-area: header;
-    background: url("https://pure.wallpapergk.com/download/smiley_curly_hair_blue_eyes_cute_girl_in_blur_background_wearing_yellow_dress_cute.jpg") yellow;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-}
+    padding: 10px;
+  }
 
 .title-aboutme-container {
-    background: pink;
     border-right: 3px solid coral;
     grid-area: sidebar;
     /* border-radius: var(--main-radius);
     padding-top: var(--main-padding); */
+}
+
+.aboutme-contents {
+    grid-area: aboutme;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+
+    /* create border shadow bottom */
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
 }
 
 .title-work-container {
-    background: pink;
     grid-area: sidebar;
     border-right: 3px solid coral;
     grid-area: sidebar;
@@ -130,43 +169,88 @@ header {
     padding-top: var(--main-padding); */
 }
 
-.content1 {
+.work-contents {
+    grid-area: work;
+    background: url("https://pure.wallpapergk.com/download/smiley_curly_hair_blue_eyes_cute_girl_in_blur_background_wearing_yellow_dress_cute.jpg") yellow;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+
+    /* create border shadow bottom */
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+}
+
+.title-contactme-container {
+    border-right: 3px solid coral;
+    grid-area: sidebar;
+    /* border-radius: var(--main-radius);
+    padding-top: var(--main-padding); */
+}
+
+.contactme-contents{
+    grid-area: contactme;
     background: yellow;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+
+    /* create border shadow bottom */
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+}
+
+.content1 {
+    background: url("https://pure.wallpapergk.com/download/smiley_curly_hair_blue_eyes_cute_girl_in_blur_background_wearing_yellow_dress_cute.jpg") yellow;
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-area: content1;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
 }
 
 .content2 {
-    background: yellow;
+    background: url("https://pure.wallpapergk.com/download/smiley_curly_hair_blue_eyes_cute_girl_in_blur_background_wearing_yellow_dress_cute.jpg") yellow;
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-area: content2;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
 }
 
 .content3 {
-    background: yellow;
+    background: url("https://pure.wallpapergk.com/download/smiley_curly_hair_blue_eyes_cute_girl_in_blur_background_wearing_yellow_dress_cute.jpg") yellow;
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-area: content3;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
 }
 
 .content4 {
-    background: yellow;
+    background: url("https://pure.wallpapergk.com/download/smiley_curly_hair_blue_eyes_cute_girl_in_blur_background_wearing_yellow_dress_cute.jpg") yellow;
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-area: content4;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
 }
 
 .content5 {
-    background: yellow;
+    background: url("https://pure.wallpapergk.com/download/smiley_curly_hair_blue_eyes_cute_girl_in_blur_background_wearing_yellow_dress_cute.jpg") yellow;
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-area: content5;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
 }
 
 .content6 {
-    background: yellow;
+    background: url("https://pure.wallpapergk.com/download/smiley_curly_hair_blue_eyes_cute_girl_in_blur_background_wearing_yellow_dress_cute.jpg") yellow;
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-area: content6;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
