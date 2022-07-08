@@ -4,3 +4,5 @@
 3. Add information
 4. Submite Github
 5. Deploy website
+
+Live URL: https://channchealysek.github.io/portfolio/
