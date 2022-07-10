@@ -1,184 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
 
-    <title>My Porfolio</title>
-  </head>
-  <body>
-    <!-- navigation tags - block level element -->
-    <header>
-      <h1 class="logo">
-        <a href="/">SEK, Channchealy</a>
-      </h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="#about-me">About Me</a>
-          </li>
-          <li>
-            <a href="#work">Work</a>
-          </li>
-          <li>
-            <a href="#contact-me">Contact Me</a>
-          </li>
-          <li>
-            <a href="#resume">Resume</a>
-          </li>
-          
-        </ul>
-      </nav>
-    </header>
-    <!-- end navigation -->
-    <!-- section header with background image -->
-    <div class="section-header text-left">
-      <div class="sub-title">
-        <p>
-          Porfolio with HTML/CSS
-        </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+
+
+  <title>My Porfolio</title>
+</head>
+
+<body>
+  <!-- navigation tags - block level element -->
+  <header>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">SEK, Channchealy</label>
+      <ul id="primary-navigation" class="primary-navigation flex">
+        <li>
+          <a class="active" href="#about-me">About Me</a>
+        </li>
+        <li>
+          <a href="#work">Work</a>
+        </li>
+        <li>
+          <a href="#contact-me">Contact Me</a>
+        </li>
+        <li>
+          <a href="#resume">Resume</a>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+  <div class="sidebar-container">
+    <div class="title-container">
+      <h2>About Me</h2>
+    </div>
+    <div class="text-content-aboutme">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur nisi alias,
+      earum nobis perferendis saepe eum quod sed repudiandae quia esse debitis illum nesciunt dolorum hic doloribus
+      eveniet, officia ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam perspiciatis aperiam,
+      cumque a magnam dolorem nesciunt ipsam nostrum nihil aliquid laboriosam quos, ducimus magni itaque adipisci. Minus
+      labore libero nemo.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam eaque ex sequi corporis repellat numquam
+      recusandae totam at dolores accusantium quos nostrum deserunt aliquam asperiores, architecto consequuntur,
+      reiciendis illo fugiat.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores dolorum possimus facilis praesentium harum error
+      doloremque, libero dicta asperiores repellat animi alias deleniti, architecto qui et tempora. Ipsa, cupiditate
+      ratione!
+    </div>
+  </div>
+  <div class="sidebar-container">
+    <div class="title-container">
+      <h2>Work</h2>
+    </div>
+    <div class="project-container">
+      <div class="project-card-col1">
+        <div class="project-card">
+          <div class="project-img">
+            <img src="https://i.postimg.cc/j58mP1vq/C-Users-sekch-desktop-projects-cs-movie-info-db-index-html-search-1.png" alt="" id="poster__img">
+          </div>
+          <div class="project-body">
+            <h2 class="project-title">Lorem ipsum dolor sit amet consectetur</h2>
+            <p class="project-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptates
+              voluptatem
+              optio ad blanditiis mollitia repellat beatae voluptate iure dolores accusamus, officiis ex perspiciatis!
+              Tempora
+              vero qui aliquam nulla corporis?</p>
+          </div>
+        </div>
+      </div>
+      <!-- 3cols -->
+
+      <div class="project-card-cols3">
+        <div class="project-card3">
+          <div class="project-img3">
+            <img src="https://via.placeholder.com/450x250" alt="" id="poster__img">
+          </div>
+          <div class="project-body">
+            <h2 class="project-title">Lorem ipsum dolor sit amet consectetur</h2>
+            <p class="project-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptates
+              voluptatem
+              optio ad blanditiis mollitia repellat beatae voluptate iure dolores accusamus, officiis ex perspiciatis!
+              Tempora
+              vero qui aliquam nulla corporis?</p>
+          </div>
+        </div>
+        <div class="project-card3">
+          <div class="project-img3">
+            <img src="https://via.placeholder.com/450x250" alt="" id="poster__img">
+          </div>
+          <div class="project-body">
+            <h2 class="project-title">Lorem ipsum dolor sit amet consectetur</h2>
+            <p class="project-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptates
+              voluptatem
+              optio ad blanditiis mollitia repellat beatae voluptate iure dolores accusamus, officiis ex perspiciatis!
+              Tempora
+              vero qui aliquam nulla corporis?</p>
+          </div>
+        </div>
+        <div class="project-card3">
+          <div class="project-img3">
+            <img src="https://via.placeholder.com/450x250" alt="" id="poster__img">
+          </div>
+          <div class="project-body">
+            <h2 class="project-title">Lorem ipsum dolor sit amet consectetur</h2>
+            <p class="project-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptates
+              voluptatem
+              optio ad blanditiis mollitia repellat beatae voluptate iure dolores accusamus, officiis ex perspiciatis!
+              Tempora
+              vero qui aliquam nulla corporis?</p>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
 
-    <!--section -->
-    <div class="section">
-      <section>
-        <article id="about-me">
-          <div class="wrapper">
-            <div class="aboutme-container">
-              <div class="title-container">
-                <h1>About Me</h1>
-              </div>
-              <div class="logo-img">
-                <img src="./assets/images/aboutme.jpg" alt="My name Channcheay Seek, I am working as softwares Developments, I will bring your company with most effective design.">
-              </div>
-            </div>
-            <div class="projects-container">
-              <div class="container">
-                <div class="grid about-me">
-                  <p>I worked more then 15 years in Information Technology Department as Cheif of Department while I working for National Technical Training Institute (NTTI) <a href="https://www.ntti.edu.kh"> more here</a>. The Department responsible for trainig students in field of IT related to skills Programming, Networking, Web Design and Mobile Application Developments. I develped softwares for my workplace like, Student Management System, ID-Card Printing, NTTI App for iOS and Andriod, customized e-learing platform support with browser, iOS and Andriod. 
-                    Review and Update curriculumn for field Information Technology every year with teachers and companies to improve teaching to react out to the market requirement that make students can easy to find job when they graduated.
-                  </p>
-  
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article id="work">
-          <div class="wrapper">
-            <div class="title-container">
-              <h1>Work</h1>
-            </div>
-            <div class="projects-container">
-              <div class="container">
-                <div class="grid surf-report">
-                  <div class="image-container">
-                    <a href="#">
-                      <img src="./assets/images/image-bg0.png" alt="Surf Report with MERN Stact">
-                    </a>
-                  </div>
-                    <div class="title">
-                      <p>
-                        <h1>Surf Report</h1>
-                        <h2>MERN Stack</h2>
-                      </p>
-                    </div>
-                </div>
-                
-                <div class="grid led-wall">
-                  <div class="image-container">
-                    <a href="#">
-                      <img src="./assets/images/image-bg0.png" alt="LED Wall with Node/IoT">
-                    </a>
-                  </div>
-                  <div class="title">
-                    <p>
-                      <h1>LED Wall</h1>
-                      <h2>Node/IoT</h2>
-                    </p>
-                  </div>
-                </div>
-  
-                <div class="pastel-puzzels">
-                  <div class="image-container">
-                    <a href="#">
-                      <img src="./assets/images/image-bg0.png" alt="Pastel Puzzels with MERN Stack">
-                    </a>
-                  </div>
-                  <div class="title">
-                    <p>
-                      <h1>Pastel Puzzels</h1>
-                      <h2>MERN Stack</h2>
-                    </p>
-                  </div>
-                </div>
-                <div class="grid calculator">   
-                  <div class="image-container">
-                    <a href="#">
-                      <img src="./assets/images/image-bg0.png" alt="Calculator with React/JavaScript/CSS">
-                    </a>
-                  </div>      
-                  <div class="title">
-                    <p>
-                      <h1>Calculator</h1>
-                      <h2>React/JavaScript/CSS</h2>
-                    </p>
-                  </div>
-                </div>
-  
-                <div class="grid run-buddy">
-                  <div class="image-container">
-                    <a href="https://channchealysek.github.io/run-buddy/" target="_blank">
-                      <img src="./assets/images/run-buddy.png" alt="HTML/CSS">
-                    </a>
-                  </div>  
-                  <div class="title">
-                    <p>
-                      <h1>Run Buddy</h1>
-                      <h2>HTML/CSS</h2>
-                    </p>
-                  </div>
-                </div>
-  
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article id="contact-me">
-          <div class="wrapper">
-            <div class="title-container">
-              <h1>Contact Me</h1>
-            </div>
-            <div class="projects-container">
-              <div class="container">
-                <div class="grid contact-me">
-                  <div class="navbar-contactme">
-                    <a class="nav-link nav-link-fade-up" href="#">713-355-4501</a>
-                    <a class="nav-link nav-link-fade-up" href="#">sek.channchealy@yahoo.com</a>
-                    <a class="nav-link nav-link-fade-up" href="https://github.com/channchealysek">GitHub</a>
-                    <a class="nav-link nav-link-fade-up" href="https://www.facebook.com/sek.channchealy" target="_blank">Facebook</a>
-                    <a class="nav-link nav-link-fade-up" href="https://www.linkedin.com/in/channchealysek/" target="_blank">LinkIn</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-      </section>
+  <div class="sidebar-container">
+    <div class="title-container">
+      <h2>Contact Me</h2>
     </div>
-    <!-- footer -->
-    <footer>
-      <div>
-        <h2>❤️ Made with love by Me.</h2>
-        <a href="#">More Please Feel Free Contact Me</a><br/>
-        &copy; 2020 Porfolio, Me.
-      </div>
-    </footer>
+    <div class="text-content-contactme">
+      <ul>
+        <li><a>713 355 4501</a></li>
+        <li><a>sek.chanchealy@yahoo.com</a></li>
+        <li><a>GitHub</a></li>
+        <li><a>Facebook</a></li>
+        <li><a>LinkIn</a></li>
+      </ul>
+    </div>
+  </div>
 
-  </body>
+  <script src="./assets/js/a076d05399.js"></script>
+</body>
+
 </html>

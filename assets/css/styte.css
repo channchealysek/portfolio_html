@@ -33,6 +33,82 @@ nav {
     box-shadow: 0 4px 6px -6px #222;
 }
 
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* start work contaner------------------------------------------------- */
+
+.container {
+    max-width: 100rem;
+    margin-inline: auto;
+    padding: 2rem;
+}
+
+.stacked {
+    display: grid;
+}
+
+.stacked > * {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.work-area-grid {
+    display: grid;
+    gap: .25rem;
+    grid-template-columns: 
+    repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.card {
+    aspect-ratio: 1 / 1.5;
+}
+
+.card-content {
+    background: white;
+    align-self: end;
+    margin: .5rem .5rem 2rem;
+    padding: .5rem;
+    box-shadow: 0 .25rem 1rem rgb(0 0 0 / .1);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    line-height: 1.1;
+    color: firebrick;
+}
+
+.img-card {
+    width: 100%;
+    aspect-ratio: 1 / 1.25;
+    object-fit: cover;
+}
+@media (min-width: 60em) {
+
+    .img-card {
+        aspect-ratio: 1 / 1;
+    }
+
+    .card.featured:nth-child(1) {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    
+    .card.featured .img-card {
+        aspect-ratio: 1 / 1.34;
+    }
+    
+    .card.featured .card-title {
+        font-size: 1.75rem;
+    }
+}
+
+/* end work container---------------------------------------------- */
+
 .header-container {
     display: grid;
     height: 27vh;
@@ -65,7 +141,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    "sidebar aboutme aboutme aboutme aboutme aboutme aboutme aboutme aboutme aboutme";
+    "sidebar sidebar sidebar aboutme aboutme aboutme aboutme aboutme aboutme aboutme";
     gap: 0.2rem;
     text-align: right;
     margin-top: 0.4rem;
@@ -77,14 +153,14 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 5.3fr 3.3fr 2.3fr 1.2fr 1.2fr 1.2fr 3.2fr 3.2fr;
     grid-template-areas:
-    "sidebar work work work work work work work work work"
-    "sidebar content1 content1 content1 content3 content3 content3 content3 content3 content3"
-    "sidebar content1 content1 content1 content3 content3 content3 content3 content3 content3"
-    "sidebar content1 content1 content1 content3 content3 content3 content3 content3 content3"
-    "sidebar content2 content2 content2 content3 content3 content3 content3 content3 content3"
-    "sidebar content2 content2 content2 content3 content3 content3 content3 content3 content3"
-    "sidebar content4 content4 content4 content3 content3 content3 content3 content3 content3"
-    "sidebar content5 content5 content5 content5 content5 content5 content6 content6 content6";
+    "sidebar sidebar sidebar work work work work work work work"
+    "sidebar sidebar sidebar content1 content1 content1 content3 content3 content3 content3"
+    "sidebar sidebar sidebar content1 content1 content1 content3 content3 content3 content3"
+    "sidebar sidebar sidebar content1 content1 content1 content3 content3 content3 content3"
+    "sidebar sidebar sidebar content2 content2 content2 content3 content3 content3 content3"
+    "sidebar sidebar sidebar content2 content2 content2 content3 content3 content3 content3"
+    "sidebar sidebar sidebar content4 content4 content4 content3 content3 content3 content3"
+    "sidebar sidebar sidebar content5 content5 content5 content5 content6 content6 content6";
     gap: 0.2rem;
     text-align: right;
     margin-top: 0.4rem;
@@ -96,7 +172,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    "sidebar contactme contactme contactme contactme contactme contactme contactme contactme contactme";
+    "sidebar sidebar sidebar contactme contactme contactme contactme contactme contactme contactme";
     gap: 0.2rem;
     text-align: right;
     margin-top: 0.4rem;
