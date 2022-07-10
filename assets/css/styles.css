@@ -12,6 +12,59 @@ body {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
+.img-top-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-image: url(../images/header_bg.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+  margin-bottom: 10px;
+
+  /* create border shadow bottom */
+  -webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;
+}
+
+.tip-container{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.tip-container {
+  max-width: 100%;
+}
+
+.img-top-container img {
+  width: 150px;
+  background: #888;
+  border-radius: 15px;
+}
+
+.tip-container div h3{
+  width: 450px;
+  color: whitesmoke;
+  font-weight: bold;
+  line-height: 35px;
+  font-size: 23px;
+  padding: 20px;
+  border-radius: 0 35px;
+}
+
+h3 {
+  backdrop-filter: blur(3px) saturate(70%);
+}
+
+.quo-title {
+  margin-bottom: 30px;
+  font-size: 36px;
+}
 
 nav {
   background: #0082e6;
@@ -98,10 +151,8 @@ a:hover {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 5px 0 #888;
-  margin-bottom: 30px;
   margin-top: 10px;
-  min-height: 350px;
-  cursor: pointer;
+  min-height: auto;
 }
 
 .project-img {
@@ -124,18 +175,18 @@ a:hover {
 
 .project-card3 {
   background-color: #fff;
-  max-width: 450px;
+  max-width: 530px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 5px 0 #888;
-  margin: 0 5px;
-  min-height: 250px;
+  margin: 0 10px;
+  min-height: auto;
   cursor: pointer;
 }
 
 .project-img3 {
   position: relative;
-  max-height: 250px;
+  max-height: 450px;
   overflow: hidden;
 }
 
@@ -146,16 +197,16 @@ a:hover {
 
 .project-body {
   position: relative;
-  padding: 20px;
+  padding-left: 10px;
 }
 
 .project-title {
   background-color: #2c3e50;
   color: #fff;
   font-size: 1.04rem;
-  padding: 10px;
+  padding: 20px;
   margin-top: -50.3px;
-  margin-left: -23px;
+  margin-left: -20px;
   margin-bottom: 10px;
   border-radius: 0 10px;
   box-shadow: 2px 2px 5px 0 #888;
@@ -205,6 +256,16 @@ a:hover {
   background: white;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.social-container {
+  display: block;
+  margin-bottom: 0;
+  
+}
+
+.social-container img {
+  width: 10%;
 }
 
 @media (max-width: 937px) {
