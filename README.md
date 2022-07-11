@@ -8,7 +8,7 @@
 Live URL: https://channchealysek.github.io/portfolio/
 
 ScreenShot:
-![channchealysek github io_portfolio_](https://user-images.githubusercontent.com/102747948/178162955-b47be4af-3ee1-4071-95ed-b6b9d5a57fdb.png)
+![_C__Users_sekch_desktop_projects_portfolio_index html](https://user-images.githubusercontent.com/102747948/178334436-ba6c23c5-1f52-4e09-9fa8-1464780f3df6.png)
 
 *** everyone can copy and redesign to used for you own, but the license under yourself responsibility.
 
