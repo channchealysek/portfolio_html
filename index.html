@@ -4,142 +4,166 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
-
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
 
   <title>My Porfolio</title>
 </head>
 
 <body>
-  <!-- navigation tags - block level element -->
-  <header>
-    <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <label class="logo">SEK, Channchealy</label>
-      <ul id="primary-navigation" class="primary-navigation flex">
-        <li>
-          <a class="active" href="#about-me">About Me</a>
-        </li>
-        <li>
-          <a href="#work">Work</a>
-        </li>
-        <li>
-          <a href="#contact-me">Contact Me</a>
-        </li>
-        <li>
-          <a href="https://docs.google.com/file/d/15kDohlUbMNurdPyT6-YgWx6NyhG08rga/edit?usp=docslist_api&filetype=msword" target="_blank">Resume</a>
-        </li>
 
-      </ul>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="logo">SEK, Channchealy</a>
+
+      <div class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#about-me" class="nav-link active-link">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="#work" class="nav-link">Work</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact-me" class="nav-link">Contact Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://docs.google.com/file/d/15kDohlUbMNurdPyT6-YgWx6NyhG08rga/edit?usp=docslist_api&filetype=msword"
+              target="_blank" class="nav-link">Resume</a>
+          </li>
+
+          <div class="nav-close" id="nav-close"><i class="bx bx-x"></i></div>
+        </ul>
+      </div>
+
+      <div class="nav-open" id="nav-open"><i class="bx bx-grid-alt"></i></div>
     </nav>
   </header>
-  <div class="img-top-container">
-    <div class="tip-container">
-      <div class="logo-img"><img src="./assets/images/aboutme.jpg" alt="my person image picture"></div>
-      <div><h1><h3><span class="quo-title">Let Me!,</span> <br />"Bring your company to the future ..... bright with technology"</h3></div>
-    </div>
-  </div>
-  <div class="sidebar-container" id="about-me">
-    <div class="title-container">
-      <h2>About Me</h2>
-    </div>
-    <div class="text-content-aboutme">
-      <p>I am working as Computer Software Developer as a chief of Information Technologies for 15years at National Technical Training Institute (NTTI). I had developed softwares supports to run on many OS eg. Windows, iOS, and Android. I used Microsoft Visual Studio, MYSQL, and Linux OS to support and running softwares. The softwares I had created includes: Student Management System, CardID Print, NTTI APP, and modify system students E-learning to use for training students at NTTI during COVID-19 situation.</p>
-      <p><br />I know about problems solving for domains and hosting, backup and management maintenances database on server side.</p> 
-      <p><br />I know about more and used with digital marketing and promotes advertising using social Media.</p>
-      <p>My interesting, actually are on analysis and Develop Softwares. </p>
-    </div>
-  </div>
-  <div class="sidebar-container" id="work">
-    <div class="title-container">
-      <h2>Work</h2>
-    </div>
-    <div class="project-container">
-      <div class="project-card-col1">
-        <div class="project-card">
-          <div class="project-img">
-            <img src="./assets/images/run-buddy.png" alt="" id="poster__img">
-          </div>
-          <div class="project-body">
-            <h2 class="project-title">RUN BUDDY</h2>
-            <div class="social-container">
-              <div>
-                <!-- github url -->
-                <a href="https://github.com/channchealysek/run-buddy" target="_blank">
-                  <img src="./assets/images/github.png" alt=""></a>
-                <!-- live url -->
-                <a href="https://channchealysek.github.io/run-buddy/" target="_blank">
-                  <img src="./assets/images/liveurl.png" alt=""></a>
-              </div>
-            </div>
-          </div>
+
+  <main class="main">
+    <section class="section home" id="home">
+      <div class="home-data">
+        <img src="./assets/images/aboutme.jpg" alt="">
+        <p>Let Me!,</span> <br />"Bring your company to the future<br />..... bright with
+          technology"</p>
+      </div>
+    </section>
+
+    <section class="section about-me" id="about-me">
+      <div class="sidebar-container">
+        <div class="title-container">
+          <h2>About Me</h2>
+        </div>
+        <div class="text-content-aboutme">
+          <p>I am working as Computer Software Developer as a chief of Information Technologies for 15years at National
+            Technical Training Institute (NTTI). I had developed softwares supports to run on many OS eg. Windows, iOS, and
+            Android. I used Microsoft Visual Studio, MYSQL, and Linux OS to support and running softwares. The softwares I
+            had created includes: Student Management System, CardID Print, NTTI APP, and modify system students E-learning
+            to use for training students at NTTI during COVID-19 situation.</p>
+          <p><br />I know about problems solving for domains and hosting, backup and management maintenances database on
+            server side.</p>
+          <p><br />I know about more and used with digital marketing and promotes advertising using social Media.</p>
+          <p>My interesting, actually are on analysis and Develop Softwares. </p>
         </div>
       </div>
-      <!-- 3cols -->
+    </section>
 
-      <div class="project-card-cols3">
-        <div class="project-card3">
-          <div class="project-img3">
-            <img src="./assets/images/cs-movie-info-db_.png" alt="" id="poster__img">
-          </div>
-          <div class="project-body">
-            <h2 class="project-title">Movie Info Database</h2>
-            <div class="project-body">
-              <div class="social-container">
-                <div>
-                  <!-- github url -->
-                  <a href="https://github.com/channchealysek/cs-movie-info-db" target="_blank">
-                    <img src="./assets/images/github.png" alt="Movie Info Database"></a>
-                  <!-- live url -->
-                  <a href="https://channchealysek.github.io/cs-movie-info-db/" target="_blank">
-                    <img src="./assets/images/liveurl.png" alt="Movie Info Database"></a>
+    <section class="section work" id="work">
+      <div class="sidebar-container">
+        <div class="title-container">
+          <h2>Work</h2>
+        </div>
+        <div class="project-container">
+          <div class="project-card-col1">
+            <div class="project-card">
+              <div class="project-img">
+                <img src="./assets/images/run-buddy.png" alt="" id="poster__img">
+              </div>
+              <div class="project-body">
+                <h2 class="project-title">RUN BUDDY</h2>
+                <div class="social-container">
+                  <div>
+                    <!-- github url -->
+                    <a href="https://github.com/channchealysek/run-buddy" target="_blank">
+                      <img src="./assets/images/github.png" alt=""></a>
+                    <!-- live url -->
+                    <a href="https://channchealysek.github.io/run-buddy/" target="_blank">
+                      <img src="./assets/images/liveurl.png" alt=""></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="project-card3">
-          <div class="project-img3">
-            <img src="./assets/images/weather_daskboard.png" alt="" id="poster__img">
-          </div>
-          <div class="project-body">
-            <h2 class="project-title">Weather Daskboard</h2>
-            <div class="project-body">
-              <div class="social-container">
-                <div>
-                  <!-- github url -->
-                  <a href="https://github.com/channchealysek/cs-js-weather" target="_blank">
-                    <img src="./assets/images/github.png" alt=""></a>
-                  <!-- live url -->
-                  <a href="https://channchealysek.github.io/cs-js-weather/" target="_blank">
-                    <img src="./assets/images/liveurl.png" alt=""></a>
+          <!-- 3cols -->
+    
+          <div class="project-card-cols3">
+
+            <div class="project-card3">
+              <div class="project-img3">
+                <img src="./assets/images/weather_daskboard.png" alt="" id="poster__img">
+              </div>
+              <div class="project-body">
+                <h2 class="project-title">Weather Daskboard</h2>
+                <div class="project-body">
+                  <div class="social-container">
+                    <div>
+                      <!-- github url -->
+                      <a href="https://github.com/channchealysek/cs-js-weather" target="_blank">
+                        <img src="./assets/images/github.png" alt=""></a>
+                      <!-- live url -->
+                      <a href="https://channchealysek.github.io/cs-js-weather/" target="_blank">
+                        <img src="./assets/images/liveurl.png" alt=""></a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+
+            <div class="project-card3">
+              <div class="project-img3">
+                <img src="./assets/images/cs-movie-info-db_.png" alt="" id="poster__img">
+              </div>
+              <div class="project-body">
+                <h2 class="project-title">Movie Info Database</h2>
+                <div class="project-body">
+                  <div class="social-container">
+                    <div>
+                      <!-- github url -->
+                      <a href="https://github.com/channchealysek/cs-movie-info-db" target="_blank">
+                        <img src="./assets/images/github.png" alt="Movie Info Database"></a>
+                      <!-- live url -->
+                      <a href="https://channchealysek.github.io/cs-movie-info-db/" target="_blank">
+                        <img src="./assets/images/liveurl.png" alt="Movie Info Database"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="sidebar-container" id="contact-me">
-    <div class="title-container">
-      <h2>Contact Me</h2>
-    </div>
-    <div class="text-content-contactme">
-      <ul>
-        <li><a>713 355 4501</a></li>
-        <li><a>sek.chanchealy@yahoo.com</a></li>
-        <li><a href="https://github.com/channchealysek/" target="_blank" >GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/channchealysek/" target="_blank">LinkIn</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <script src="./assets/js/a076d05399.js"></script>
+    <section class="section contact-me" id="contact-me">
+      <div class="sidebar-container">
+        <div class="title-container">
+          <h2>Contact Me</h2>
+        </div>
+        <div class="text-content-contactme">
+          <ul>
+            <li><a>713 355 4501</a></li>
+            <li><a>sek.chanchealy@yahoo.com</a></li>
+            <li><a href="https://github.com/channchealysek/" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/channchealysek/" target="_blank">LinkIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
