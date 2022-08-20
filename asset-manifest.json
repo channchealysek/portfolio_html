@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0a5c0d44.css",
+    "main.js": "/static/js/main.573e5f3e.js",
+    "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.fc5dd5b7715de80aae18.svg",
+    "static/media/fa-brands-400.svg": "/static/media/fa-brands-400.c85bfa49e8f57a88ad68.svg",
+    "static/media/fa-solid-900.eot": "/static/media/fa-solid-900.f06e568e0195a8a577d5.eot",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.81853c2fb712de98ef66.ttf",
+    "static/media/Gilroy-Light.ttf": "/static/media/Gilroy-Light.1822a291dd62fe2cca72.ttf",
+    "static/media/Gilroy-Medium.ttf": "/static/media/Gilroy-Medium.1b4da6582f83f45ea039.ttf",
+    "static/media/fa-regular-400.svg": "/static/media/fa-regular-400.b7df56f4ec0131a3c5ba.svg",
+    "static/media/Gilroy-SemiBold.ttf": "/static/media/Gilroy-SemiBold.07b9100a72fe7d46d20a.ttf",
+    "static/media/Gilroy-Bold.ttf": "/static/media/Gilroy-Bold.ca49f7658c4eaac78b6d.ttf",
+    "static/media/fa-brands-400.eot": "/static/media/fa-brands-400.f3a4f7eb2dc18cd322fb.eot",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.9bced9316ed8397fa186.ttf",
+    "static/media/fa-solid-900.woff": "/static/media/fa-solid-900.0239b22511e2cbe0741a.woff",
+    "static/media/fa-brands-400.woff": "/static/media/fa-brands-400.3696430def234662756a.woff",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.c2b7c03209f0d3558e85.woff2",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.97120c2696ac6694632d.woff2",
+    "static/media/Al-Jazeera-Arabic-Regular.ttf": "/static/media/Al-Jazeera-Arabic-Regular.8230ad42502bb46ed913.ttf",
+    "static/media/fa-regular-400.eot": "/static/media/fa-regular-400.dd9a12163ec6ab0d1bf1.eot",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.b532fab9650d3b7c90a0.ttf",
+    "static/media/fa-regular-400.woff": "/static/media/fa-regular-400.95352b573931aa75b5b6.woff",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.95dbe63555424726ce0c.woff2",
+    "index.html": "/index.html",
+    "main.0a5c0d44.css.map": "/static/css/main.0a5c0d44.css.map",
+    "main.573e5f3e.js.map": "/static/js/main.573e5f3e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a5c0d44.css",
+    "static/js/main.573e5f3e.js"
+  ]
+}

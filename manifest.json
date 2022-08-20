@@ -1,0 +1,17 @@
+{
+  "short_name": "Sek",
+  "name": "Sek",
+  "description": "Modern React Resume",
+  "icons": [
+    {
+      "src": "Icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "scope": "/",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1FA78F",
+  "background_color": "#ffffff"
+}
