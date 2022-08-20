@@ -1,5 +1,5 @@
 # Portfolis
 
-Live URL: https://channchealysek.github.io/portfolio/
+Live URL: chealy.net
 
 Thanks.
