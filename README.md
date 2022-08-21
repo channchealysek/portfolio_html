@@ -1,5 +1,7 @@
 # Portfolis
+The responsive portfolio design using HTML and CSS with JS. 
 
-Live URL: https://channchealysek.github.io/portfolio/ | chealy.net
+##Please see url bellow:
+Live URL: https://channchealysek.github.io/portfolio/
 
 Thanks.
